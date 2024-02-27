@@ -59,7 +59,7 @@ jobs:
           platforms: linux/arm,linux/arm64,linux/amd64
           push: true
           tags: |
-            dawenhaozx/airgo:${{ steps.get_version.outputs.VERSION }}
-            dawenhaozx/airgo:latest
+            wenhao12100/airgo:${{ steps.get_version.outputs.VERSION }}
+            wenhao12100/airgo:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
