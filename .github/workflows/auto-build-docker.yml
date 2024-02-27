@@ -1,7 +1,7 @@
 name: Auto build docker
 on:
   release:
-    types: [ published ]
+    types: [created]
 
 permissions:
   contents: write
