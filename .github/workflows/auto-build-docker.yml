@@ -1,7 +1,7 @@
 name: Auto build docker
 on:
   release:
-    types: [created]
+    types: [ published ]
 
 permissions:
   contents: write
@@ -59,7 +59,7 @@ jobs:
           platforms: linux/arm,linux/arm64,linux/amd64
           push: true
           tags: |
-            ppoiuty/airgo:${{ steps.get_version.outputs.VERSION }}
-            ppoiuty/airgo:latest
+            dawenhaozx/airgo:${{ steps.get_version.outputs.VERSION }}
+            dawenhaozx/airgo:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
